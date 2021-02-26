@@ -53,14 +53,14 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "apptest.ai"
+title = ""
 description = "Documentation for apptest.ai"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 
 [languages.ko]
-title = "apptest.ai"
+title = ""
 description = "Documentation for apptest.ai"
 languageName ="Korean"
 contentDir = "content/ko"
