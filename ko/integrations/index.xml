@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>apptest.ai – CI/CD Integration Document</title><link>/docs/ko/integrations/</link><description>Recent content in CI/CD Integration Document on apptest.ai</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/ko/integrations/index.xml" rel="self" type="application/rss+xml"/><item><title>Integrations: 1. Jenkins</title><link>/docs/ko/integrations/1_jenkins/</link><pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><guid>/docs/ko/integrations/1_jenkins/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>– CI/CD Integration Document</title><link>/docs/ko/integrations/</link><description>Recent content in CI/CD Integration Document on</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/ko/integrations/index.xml" rel="self" type="application/rss+xml"/><item><title>Integrations: 1. Jenkins</title><link>/docs/ko/integrations/1_jenkins/</link><pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate><guid>/docs/ko/integrations/1_jenkins/</guid><description>
 &lt;h2 id="jenkins-사용자를-위한-apptestai-통합-가이드">Jenkins 사용자를 위한 apptest.ai 통합 가이드&lt;/h2>
 &lt;h5 id="jenkins-파이프라인으로-android-및-ios-앱-테스트-자동화하기">Jenkins 파이프라인으로 Android 및 iOS 앱 테스트 자동화하기&lt;/h5>
 &lt;p>이 문서는 Jenkins를 구성하고 API를 사용하여 빌드 단계에서 apptest.ai 테스트를 자동으로 실행할 수 있도록 통합시키는 방법을 설명합니다.&lt;/p>
@@ -10,48 +10,48 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th align="left">Name&lt;/th>
-&lt;th align="left">Type&lt;/th>
-&lt;th align="left">Required / Optional&lt;/th>
-&lt;th align="left">Description&lt;/th>
+&lt;th style="text-align:left">Name&lt;/th>
+&lt;th style="text-align:left">Type&lt;/th>
+&lt;th style="text-align:left">Required / Optional&lt;/th>
+&lt;th style="text-align:left">Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td align="left">callback&lt;/td>
-&lt;td align="left">String&lt;/td>
-&lt;td align="left">Optional&lt;/td>
-&lt;td align="left">테스트가 완료되면 호출될 Callback URL&lt;/td>
+&lt;td style="text-align:left">callback&lt;/td>
+&lt;td style="text-align:left">String&lt;/td>
+&lt;td style="text-align:left">Optional&lt;/td>
+&lt;td style="text-align:left">테스트가 완료되면 호출될 Callback URL&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td align="left">pid&lt;/td>
-&lt;td align="left">Integer&lt;/td>
-&lt;td align="left">Required&lt;/td>
-&lt;td align="left">apptest.ai에서 생성한 프로젝트의 고유번호&lt;/td>
+&lt;td style="text-align:left">pid&lt;/td>
+&lt;td style="text-align:left">Integer&lt;/td>
+&lt;td style="text-align:left">Required&lt;/td>
+&lt;td style="text-align:left">apptest.ai에서 생성한 프로젝트의 고유번호&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td align="left">test_set_name&lt;/td>
-&lt;td align="left">String&lt;/td>
-&lt;td align="left">Required&lt;/td>
-&lt;td align="left">apptest.ai의 프로젝트에 생성될 테스트 세트의 이름&lt;/td>
+&lt;td style="text-align:left">test_set_name&lt;/td>
+&lt;td style="text-align:left">String&lt;/td>
+&lt;td style="text-align:left">Required&lt;/td>
+&lt;td style="text-align:left">apptest.ai의 프로젝트에 생성될 테스트 세트의 이름&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td align="left">login_id&lt;/td>
-&lt;td align="left">String&lt;/td>
-&lt;td align="left">Optional&lt;/td>
-&lt;td align="left">Testbot이 로그인 화면을 만났을때 입력할 앱의 로그인 아이디&lt;/td>
+&lt;td style="text-align:left">login_id&lt;/td>
+&lt;td style="text-align:left">String&lt;/td>
+&lt;td style="text-align:left">Optional&lt;/td>
+&lt;td style="text-align:left">Testbot이 로그인 화면을 만났을때 입력할 앱의 로그인 아이디&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td align="left">login_pw&lt;/td>
-&lt;td align="left">String&lt;/td>
-&lt;td align="left">Optional&lt;/td>
-&lt;td align="left">Testbot이 로그인 화면을 만났을때 입력할 앱의 로그인 비밀번호&lt;/td>
+&lt;td style="text-align:left">login_pw&lt;/td>
+&lt;td style="text-align:left">String&lt;/td>
+&lt;td style="text-align:left">Optional&lt;/td>
+&lt;td style="text-align:left">Testbot이 로그인 화면을 만났을때 입력할 앱의 로그인 비밀번호&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td align="left">use_vo&lt;/td>
-&lt;td align="left">Integer (0 or 1)&lt;/td>
-&lt;td align="left">Optional&lt;/td>
-&lt;td align="left">AT&amp;amp;T사의 Video Optimizer (ARO)를 활성화 / 비활성화하는 옵션&lt;/td>
+&lt;td style="text-align:left">use_vo&lt;/td>
+&lt;td style="text-align:left">Integer (0 or 1)&lt;/td>
+&lt;td style="text-align:left">Optional&lt;/td>
+&lt;td style="text-align:left">AT&amp;amp;T사의 Video Optimizer (ARO)를 활성화 / 비활성화하는 옵션&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -59,18 +59,18 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th align="left">Name&lt;/th>
-&lt;th align="left">Type&lt;/th>
-&lt;th align="left">Required / Optional&lt;/th>
-&lt;th align="left">Description&lt;/th>
+&lt;th style="text-align:left">Name&lt;/th>
+&lt;th style="text-align:left">Type&lt;/th>
+&lt;th style="text-align:left">Required / Optional&lt;/th>
+&lt;th style="text-align:left">Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td align="left">apk_file&lt;/td>
-&lt;td align="left">File&lt;/td>
-&lt;td align="left">Required&lt;/td>
-&lt;td align="left">테스트 대상이 될 앱파일&lt;/td>
+&lt;td style="text-align:left">apk_file&lt;/td>
+&lt;td style="text-align:left">File&lt;/td>
+&lt;td style="text-align:left">Required&lt;/td>
+&lt;td style="text-align:left">테스트 대상이 될 앱파일&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
