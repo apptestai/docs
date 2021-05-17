@@ -23,7 +23,7 @@ To use the apptest.ai service within Travis CI pipeline, you can take the follow
 
   ```
   $ travis login
-  $ travis encrypt APPTEST_AI_ACCESS_KEY="ID:Acess Key"  --add
+  $ travis encrypt APPTEST_AI_ACCESS_KEY="ID:Access Key"  --add
   ```
 
   > The format for the access key becomes “apptest.ai ID: apptest.ai Access Key“. For example, if the ID is jean@apptest.ai and the access key is “ab8f3e321d631c84c9b1113”, the following applies:
@@ -68,7 +68,7 @@ To use the apptest.ai service within Travis CI pipeline, you can take the follow
   > If you want to change the location of the folder to store results, declare and pass test_result_path environment variable. If you want to execute the next build without waiting for the test to finish, declare waiting_for_test_results environment variable and pass FALSE.
 
 
-  Finally, here’s the .travis.yml example. First, for Android, in the “env” section, you can see that there are two secure environment variables for storing apptest.ai access key and two secure environment variables for Github acess key to deploy.
+  Finally, here’s the .travis.yml example. First, for Android, in the “env” section, you can see that there are two secure environment variables for storing apptest.ai access key and two secure environment variables for Github access key to deploy.
 
   {{< gist genie-park afb71bfb6981edbc109eb5b8511007de >}}
 
