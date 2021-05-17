@@ -22,7 +22,7 @@ Travis CI 파이프 라인 내에서 apptest.ai 서비스를 사용하려면 다
 
   ```
   $ travis login
-  $ travis encrypt APPTEST_AI_ACCESS_KEY="ID:Acess Key"  --add
+  $ travis encrypt APPTEST_AI_ACCESS_KEY="ID:Access Key"  --add
   ```
 
   > 액세스 키의 형식은 "apptest.ai ID : apptest.ai 액세스 키"가됩니다. 예를 들어, ID가 jean@apptest.ai이고 액세스 키가 "ab8f3e321d631c84c9b1113"인 경우 다음이 적용됩니다.
@@ -62,7 +62,7 @@ apptest.ai의 CI 통합 스크립트를 매번 다운로드하지 않으려면 �
 
 > 결과를 저장할 폴더의 위치를 변경하려면 test_result_path 환경 변수를 선언하고 전달하십시오. 테스트가 완료되기를 기다리지 않고 다음 빌드를 실행하려면 waiting_for_test_results 환경 변수를 선언하고 FALSE를 전달하십시오.
 
-마지막으로 .travis.yml 예제가 있습니다. 먼저 Android의 "env"섹션에서 apptest.ai 액세스 키를 저장하기 위한 두 가지 보안 환경 변수와 Github acess 키를 배포하기 위한 두 가지 보안 환경 변수가 있음을 알 수 있습니다.
+마지막으로 .travis.yml 예제가 있습니다. 먼저 Android의 "env"섹션에서 apptest.ai 액세스 키를 저장하기 위한 두 가지 보안 환경 변수와 Github access 키를 배포하기 위한 두 가지 보안 환경 변수가 있음을 알 수 있습니다.
 {{< gist genie-park afb71bfb6981edbc109eb5b8511007de >}}
 
 iOS의 경우 iOS에는 등록 된 환경 변수가 두 개 더 필요합니다. 이것은 iOS에서 바이너리를 생성 할 때 필요한 Code sign을 위한 환경 변수입니다. 아래에서는 Code Sign에 Fastlane 매칭을 사용했습니다. Fastlane match는 Github에서 코드 서명에 필요한 인증서 파일과 프로비저닝 파일을 암호화하므로 인증서가 저장된 개인 GitHub 리포지토리에 액세스하기 위해 두 개의 액세스 토큰과 암호 해독 키가 추가됩니다.
