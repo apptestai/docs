@@ -114,21 +114,17 @@
 &lt;ul>
 &lt;li>
 &lt;p>액세스 키를 찾는 방법 : apptest.ai에 가입하면 액세스 키가 자동으로 발급됩니다. apptest.ai Profile 페이지에서 확인하실 수 있습니다.
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_1.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_1.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_2.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_2.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>프로젝트 ID를 찾는 방법 : 테스트 프로젝트를 만들 때 프로젝트 ID가 할당됩니다.
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_3.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_3.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_4.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_4.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;p>회원가입시 기본적으로 샘플 테스트 프로젝트가 1개 생성됩니다.&lt;/p>
@@ -144,18 +140,15 @@
 &lt;ul>
 &lt;li>
 &lt;p>메인 페이지에서 좌측메뉴의 Configure 버튼을 클릭하십시오.
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_5.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_5.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_6.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_6.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>파이프 라인 설정 페이지에서 apptest.ai Tes Stage Code를 스크립트 입력란에 추가하십시오.
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_7.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_7.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;h5 id="apptestai-test-stage-code-1--webhook">[apptest.ai Test Stage Code 1] – Webhook&lt;/h5>
@@ -325,8 +318,7 @@ junit 'tmp/TESTS-*.xml'
 - 샘플 테스트 프로젝트의 설정 변경은 허용되지 않지만 새 프로젝트의 설정은 변경할 수 있습니다.
 - apkFile: 테스트 할 대상 앱파일(App Binary File)
 파이프 라인을 시작하려면 Jenkins에서 &amp;quot;Build Now&amp;quot;를 클릭하십시오.
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_8.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_8.png"/>
 &lt;/figure>
 &lt;/code>&lt;/pre>&lt;/li>
 &lt;/ul>
@@ -336,39 +328,29 @@ junit 'tmp/TESTS-*.xml'
 &lt;ul>
 &lt;li>
 &lt;p>Jenkins에서 테스트 결과보기
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_9.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_9.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_10.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_10.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_11.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_11.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_12.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_12.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_13.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_13.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_14.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_14.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>apptest.ai 에서 테스트 결과보기
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_15.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_15.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_16.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_16.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_17.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_17.png"/>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../../../images/1_jenkins_18.png"/>
+&lt;figure>&lt;img src="../../../images/1_jenkins_18.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/li>
@@ -379,8 +361,7 @@ junit 'tmp/TESTS-*.xml'
 &lt;h4 id="adding-apptestai-access-key-onto-the-build-environment">Adding apptest.ai access key onto the build environment&lt;/h4>
 &lt;ul>
 &lt;li>apptest.ai 서비스의 Profile 페이지에서 액세스 키 문자열을 복사하십시오.
-&lt;figure>
-&lt;img src="../../../images/2_travisci_1.gif"/>
+&lt;figure>&lt;img src="../../../images/2_travisci_1.gif"/>
 &lt;/figure>
 &lt;/li>
 &lt;/ul>
@@ -407,23 +388,20 @@ global:
 &lt;/code>&lt;/pre>&lt;blockquote>
 &lt;p>서비스를 호출하려면 최소한 2 개의 arguments, binary_path 및 project_id가 필요합니다. binary_path는 테스트하려는 바이너리 파일의 경로입니다 (예 : Android 용 _ .apk 파일 및 iOS 용 _ .ipa 파일). project_id는 테스트 시간 및 테스트를 위한 장치 목록과 같은 설정을 포함하는 apptest.ai의 프로젝트 고유번호(Project ID)입니다. apptest.ai의 프로젝트 ID는 아래와 같이 프로젝트 정보 페이지에서 찾을 수 있습니다.&lt;/p>
 &lt;/blockquote>
-&lt;figure>
-&lt;img src="../../../images/2_travisci_2.png"/>
+&lt;figure>&lt;img src="../../../images/2_travisci_2.png"/>
 &lt;/figure>
 &lt;/li>
 &lt;/ul>
 &lt;p>apptest.ai의 CI 통합 스크립트를 매번 다운로드하지 않으려면 프로젝트 저장소에 apptest.ai의 ci_addon 저장소를 미리 포함하십시오.&lt;/p>
 &lt;ul>
 &lt;li>빌드 스크립트를 커밋하면 Travis CI가 실행됩니다. apptest.ai 스크립트를 실행할 때 아래와 같이 테스트가 실행되고 결과가 콘솔에 인쇄됩니다.
-&lt;figure>
-&lt;img src="../../../images/2_travisci_3.png"/>
+&lt;figure>&lt;img src="../../../images/2_travisci_3.png"/>
 &lt;/figure>
 &lt;/li>
 &lt;/ul>
 &lt;ul>
 &lt;li>테스트 결과는 자세한 HTML 형식의 보고서는 test-results/apptest-ai_result.html에 JUnit 테스트 결과 형식의 XML 문서는 test-results/apptestai/result.xml에 저장됩니다. Travis CI에서 제공하는 다양한 배포 기능을 사용하여이 파일을 외부에 저장할 수 있습니다. 아래는 Github의 릴리즈 예입니다. apptest.ai 테스트 보고서는 Github의 릴리스 페이지에 게시되어 있습니다.
-&lt;figure>
-&lt;img src="../../../images/2_travisci_4.gif"/>
+&lt;figure>&lt;img src="../../../images/2_travisci_4.gif"/>
 &lt;/figure>
 &lt;/li>
 &lt;/ul>
@@ -441,22 +419,19 @@ global:
 &lt;h4 id="adding-apptestai-access-key-onto-the-build-environment">Adding apptest.ai access key onto the build environment&lt;/h4>
 &lt;ol>
 &lt;li>apptest.ai 서비스의 Profile 페이지에서 액세스 키 문자열을 복사하십시오.
-&lt;figure>
-&lt;img src="../../../images/3_circleci_1.gif"/>
+&lt;figure>&lt;img src="../../../images/3_circleci_1.gif"/>
 &lt;/figure>
 &lt;/li>
 &lt;/ol>
 &lt;ol start="2">
 &lt;li>CircleCI에 연결하고 빌드 프로젝트 이름 오른쪽의 설정 아이콘을 클릭하여 빌드 구성 페이지로 이동하십시오.
-&lt;figure>
-&lt;img src="../../../images/3_circleci_2.png"/>
+&lt;figure>&lt;img src="../../../images/3_circleci_2.png"/>
 &lt;/figure>
 &lt;/li>
 &lt;/ol>
 &lt;ol start="3">
 &lt;li>설정 페이지에서 환경 변수 메뉴를 선택하고 변수 추가 단추를 클릭하여 APPTEST_AI_ACCESS_KEY 변수를 작성하십시오.
-&lt;figure>
-&lt;img src="../../../images/3_circleci_3.png"/>
+&lt;figure>&lt;img src="../../../images/3_circleci_3.png"/>
 &lt;/figure>
 &lt;/li>
 &lt;/ol>
@@ -482,8 +457,7 @@ binary_path: app/build/outputs/apk/debug/app-debug.apk
 project_id: '818'
 &lt;/code>&lt;/pre>&lt;blockquote>
 &lt;p>서비스를 호출하려면 최소한 2 개의 arguments, binary_path 및 project_id가 필요합니다. binary_path는 테스트하려는 바이너리의 경로입니다. _ Android의 경우 .apk 파일 및 iOS의 경우 _ .ipa 파일입니다. project_id는 테스트 시간 및 테스트 할 장치 목록과 같은 설정이 포함 된 apptest.ai의 프로젝트 고유번호 (Project ID)입니다. apptest.ai의 프로젝트 ID는 아래와 같이 프로젝트 정보 페이지에서 찾을 수 있습니다.
-&lt;figure>
-&lt;img src="../../../images/3_circleci_4.png"/>
+&lt;figure>&lt;img src="../../../images/3_circleci_4.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/blockquote>
@@ -493,8 +467,7 @@ project_id: '818'
 &lt;li>
 &lt;p>Execute the build&lt;/p>
 &lt;p>apptest-ai/run-test 단계는 apptest.ai로 테스트 요청을 보내고 테스트가 완료된 후 테스트 결과를 아래 그림과 같이 콘솔에 인쇄합니다.
-&lt;figure>
-&lt;img src="../../../images/3_circleci_5.png"/>
+&lt;figure>&lt;img src="../../../images/3_circleci_5.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/li>
@@ -513,8 +486,7 @@ waiting_for_test_results: 'false'
 &lt;pre>&lt;code>- store_test_results:
 path: test-results
 &lt;/code>&lt;/pre>&lt;p>Store-test 결과 단계를 추가하면 CircleCI는 아래와 같이 Test Summary 탭에 apptest.ai 테스트 결과와 다른 테스트 결과를 분석합니다.
-&lt;figure>
-&lt;img src="../../../images/3_circleci_6.png"/>
+&lt;figure>&lt;img src="../../../images/3_circleci_6.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/li>
@@ -526,15 +498,13 @@ path: test-results
 &lt;pre>&lt;code>- store_artifacts:
 path: test-results
 &lt;/code>&lt;/pre>&lt;p>저장된 테스트 보고서는 CircleCI의 아티팩트 탭에서 아래와 같이 조회됩니다.
-&lt;figure>
-&lt;img src="../../../images/3_circleci_7.png"/>
+&lt;figure>&lt;img src="../../../images/3_circleci_7.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>이 html 파일을 클릭하면 아래와 같은 상세 보고서를 볼 수 있으며,이 html 파일을 클릭하면 아래와 같은 상세 보고서를 볼 수 있습니다.
-&lt;figure>
-&lt;img src="../../../images/3_circleci_8.png"/>
+&lt;figure>&lt;img src="../../../images/3_circleci_8.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;blockquote>
@@ -554,15 +524,13 @@ test_result_path: app/build/outputs/apk/debug
 &lt;ol>
 &lt;li>
 &lt;p>아래와 같이 Sauce Labs 서비스에 액세스하여 API 키를 얻습니다.
-&lt;figure>
-&lt;img src="../../../images/4_saucelabs_1.png"/>
+&lt;figure>&lt;img src="../../../images/4_saucelabs_1.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>이전에 CircleCI에 apptest.ai 액세스 키를 등록한 것과 같은 방법으로 Sauce Labs API를 사용하여 CircleCI에서 APPTEST_AI_ACCESS_KEY를 등록하십시오
-&lt;figure>
-&lt;img src="../../../images/4_saucelabs_2.png"/>
+&lt;figure>&lt;img src="../../../images/4_saucelabs_2.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;/li>
@@ -578,38 +546,31 @@ binary_path: app/build/outputs/apk/debug/app-debug.apk
 &lt;/code>&lt;/pre>&lt;ol start="4">
 &lt;li>
 &lt;p>빌드시 아래와 같이 Sauce Labs 계정에 등록 된 장치로 테스트 할 수 있으며, 결과는 CircleCI의 아티팩트 탭에 저장됩니다. Sauce Labs에 액세스하면 장치 로그를 포함한 자세한 테스트 데이터에 액세스 할 수 있습니다.
-&lt;figure>
-&lt;img src="../../../images/4_saucelabs_3.png"/>
+&lt;figure>&lt;img src="../../../images/4_saucelabs_3.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;p>Sauce Labs에서 제공 한 LG G5 장치에서의 테스트가 성공적으로 완료되었습니다
-&lt;figure>
-&lt;img src="../../../images/4_saucelabs_4.png"/>
+&lt;figure>&lt;img src="../../../images/4_saucelabs_4.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;p>CircleCI의 테스트 Summary는 테스트 봇의 결과도 보여줍니다.
-&lt;figure>
-&lt;img src="../../../images/4_saucelabs_5.png"/>
+&lt;figure>&lt;img src="../../../images/4_saucelabs_5.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;p>CircleCI 아티팩트에서 HTML로 저장된 테스트 보고서를 확인하실 수 있습니다.
-&lt;figure>
-&lt;img src="../../../images/4_saucelabs_6.png"/>
+&lt;figure>&lt;img src="../../../images/4_saucelabs_6.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;p>이 HTML을 열어 자세한 테스트 결과를 볼 수 있습니다.
-&lt;figure>
-&lt;img src="../../../images/4_saucelabs_7.png"/>
+&lt;figure>&lt;img src="../../../images/4_saucelabs_7.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;p>테스트에 사용 된 LG G5 보고서의 세부 사항을 보려면 Sauce Labs에 접속하시면 됩니다.
-&lt;figure>
-&lt;img src="../../../images/4_saucelabs_8.png"/>
+&lt;figure>&lt;img src="../../../images/4_saucelabs_8.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;p>SauceLabs에서는 CircleCI가 요청한 테스트 중에 수집 된 스크린 샷을 볼 수 있습니다.
-&lt;figure>
-&lt;img src="../../../images/4_saucelabs_9.png"/>
+&lt;figure>&lt;img src="../../../images/4_saucelabs_9.png"/>
 &lt;/figure>
 &lt;/p>
 &lt;p>SauceLabs에서는 CircleCI에서 테스트 중에 수집 된 자세한 장치 로그를 검색 할 수도 있습니다.&lt;/p>
