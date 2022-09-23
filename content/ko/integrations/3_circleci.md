@@ -60,10 +60,10 @@ CircleCI에서 빌드하는 동안 apptest.ai 서비스를 활성화하려면 : 
       project_id: '818'
    ```
 
-   > 서비스를 호출하려면 최소한 2 개의 arguments, binary_path 및 project_id가 필요합니다. binary_path는 테스트하려는 바이너리의 경로입니다. _ Android의 경우 .apk 파일 및 iOS의 경우 _ .ipa 파일입니다. project_id는 테스트 시간 및 테스트 할 장치 목록과 같은 설정이 포함 된 apptest.ai의 프로젝트 고유번호 (Project ID)입니다. apptest.ai의 프로젝트 ID는 아래와 같이 프로젝트 정보 페이지에서 찾을 수 있습니다.
+   > 서비스를 호출하려면 최소한 2 개의 arguments, binary*path 및 project_id가 필요합니다. binary_path는 테스트하려는 바이너리의 경로입니다. * Android의 경우 .apk 파일 및 iOS의 경우 \_ .ipa 파일입니다. project_id는 테스트 시간 및 테스트 할 장치 목록과 같은 설정이 포함 된 apptest.ai의 프로젝트 고유번호 (Project ID)입니다. apptest.ai의 프로젝트 ID는 아래와 같이 프로젝트 정보 페이지에서 찾을 수 있습니다.
    > {{< figure src="../../../images/3_circleci_4.png" >}}
 
-3) Execute the build
+3. Execute the build
 
    apptest-ai/run-test 단계는 apptest.ai로 테스트 요청을 보내고 테스트가 완료된 후 테스트 결과를 아래 그림과 같이 콘솔에 인쇄합니다.
    {{< figure src="../../../images/3_circleci_5.png" >}}
@@ -89,7 +89,7 @@ CircleCI에서 빌드하는 동안 apptest.ai 서비스를 활성화하려면 : 
    Store-test 결과 단계를 추가하면 CircleCI는 아래와 같이 Test Summary 탭에 apptest.ai 테스트 결과와 다른 테스트 결과를 분석합니다.
    {{< figure src="../../../images/3_circleci_6.png" >}}
 
-1) (Optional) Storing test result
+5. (Optional) Storing test result
 
    테스트 요약은 매우 제한된 통과 / 실패 정보 만 제공하며 apptest.ai는 보다 자세한 테스트 결과 보고서를 별도의 HTML 형식으로 제공합니다. 이 보고서를 CircleCI의 아티팩트 섹션에 저장하려면 다음과 같이 CircleCI에서 제공 한 store_artifacts 단계를 추가하고 apptest.ai의 테스트 결과가 저장되는 경로를 지정하십시오.
 
